@@ -7,31 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36500FAE1C4C905E0008ACA5 /* Machine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36500FAD1C4C905E0008ACA5 /* Machine.swift */; };
+		36500FB01C4C99170008ACA5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36500FAF1C4C99170008ACA5 /* HomeViewController.swift */; };
+		36FBF74E1C4CCB4B00862309 /* UIViewController+RACObserve.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF74D1C4CCB4B00862309 /* UIViewController+RACObserve.m */; };
+		36FBF7531C4CECAA00862309 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF7521C4CECAA00862309 /* BaseView.swift */; };
+		36FBF7551C4CEECE00862309 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF7541C4CEECE00862309 /* HomeView.swift */; };
 		7828B7501C4C6DA60095129D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828B74F1C4C6DA60095129D /* BaseViewController.swift */; };
 		7828B7521C4C6DBE0095129D /* PageNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828B7511C4C6DBE0095129D /* PageNavViewController.swift */; };
 		78BB4ABD1C4B503F002DEDD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB4ABC1C4B503F002DEDD0 /* AppDelegate.swift */; };
-		78BB4ABF1C4B503F002DEDD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB4ABE1C4B503F002DEDD0 /* ViewController.swift */; };
+		78BB4ABF1C4B503F002DEDD0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB4ABE1C4B503F002DEDD0 /* MainViewController.swift */; };
 		78BB4AC21C4B503F002DEDD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BB4AC01C4B503F002DEDD0 /* Main.storyboard */; };
 		78BB4AC51C4B503F002DEDD0 /* DemoSwiftJwcaiCoreWork.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78BB4AC31C4B503F002DEDD0 /* DemoSwiftJwcaiCoreWork.xcdatamodeld */; };
 		78BB4AC71C4B503F002DEDD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78BB4AC61C4B503F002DEDD0 /* Assets.xcassets */; };
 		78BB4ACA1C4B503F002DEDD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BB4AC81C4B503F002DEDD0 /* LaunchScreen.storyboard */; };
-		78BB4AD21C4B5274002DEDD0 /* IPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB4AD11C4B5274002DEDD0 /* IPhone.swift */; };
 		DBB55DF94C35970B46661871 /* libPods-DemoSwiftJwcaiCoreWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDEAB1E8CC6FD0D784CA5EB /* libPods-DemoSwiftJwcaiCoreWork.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36500FAD1C4C905E0008ACA5 /* Machine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Machine.swift; sourceTree = "<group>"; };
+		36500FAF1C4C99170008ACA5 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		36500FB11C4CB7C80008ACA5 /* DemoSwiftJwcaiCoreWork-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoSwiftJwcaiCoreWork-Bridging-Header.h"; sourceTree = "<group>"; };
+		36FBF74C1C4CCB4B00862309 /* UIViewController+RACObserve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RACObserve.h"; sourceTree = "<group>"; };
+		36FBF74D1C4CCB4B00862309 /* UIViewController+RACObserve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RACObserve.m"; sourceTree = "<group>"; };
+		36FBF7521C4CECAA00862309 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		36FBF7541C4CEECE00862309 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3F73536C0526B2359DC32DEC /* Pods-DemoSwiftJwcaiCoreWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSwiftJwcaiCoreWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoSwiftJwcaiCoreWork/Pods-DemoSwiftJwcaiCoreWork.debug.xcconfig"; sourceTree = "<group>"; };
 		7828B74F1C4C6DA60095129D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7828B7511C4C6DBE0095129D /* PageNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageNavViewController.swift; sourceTree = "<group>"; };
 		78BB4AB91C4B503F002DEDD0 /* DemoSwiftJwcaiCoreWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoSwiftJwcaiCoreWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78BB4ABC1C4B503F002DEDD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		78BB4ABE1C4B503F002DEDD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		78BB4ABE1C4B503F002DEDD0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		78BB4AC11C4B503F002DEDD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78BB4AC41C4B503F002DEDD0 /* DemoSwiftJwcaiCoreWork.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DemoSwiftJwcaiCoreWork.xcdatamodel; sourceTree = "<group>"; };
 		78BB4AC61C4B503F002DEDD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78BB4AC91C4B503F002DEDD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78BB4ACB1C4B503F002DEDD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		78BB4AD11C4B5274002DEDD0 /* IPhone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPhone.swift; sourceTree = "<group>"; };
 		95214E7D425605757EE4EE8A /* Pods-DemoSwiftJwcaiCoreWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSwiftJwcaiCoreWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoSwiftJwcaiCoreWork/Pods-DemoSwiftJwcaiCoreWork.release.xcconfig"; sourceTree = "<group>"; };
 		CFDEAB1E8CC6FD0D784CA5EB /* libPods-DemoSwiftJwcaiCoreWork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoSwiftJwcaiCoreWork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -51,8 +61,10 @@
 		7828B74B1C4C6D0A0095129D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				78BB4AD11C4B5274002DEDD0 /* IPhone.swift */,
 				78BB4ABC1C4B503F002DEDD0 /* AppDelegate.swift */,
+				36500FAD1C4C905E0008ACA5 /* Machine.swift */,
+				36FBF74C1C4CCB4B00862309 /* UIViewController+RACObserve.h */,
+				36FBF74D1C4CCB4B00862309 /* UIViewController+RACObserve.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -62,6 +74,8 @@
 			children = (
 				78BB4AC81C4B503F002DEDD0 /* LaunchScreen.storyboard */,
 				78BB4AC01C4B503F002DEDD0 /* Main.storyboard */,
+				36FBF7521C4CECAA00862309 /* BaseView.swift */,
+				36FBF7541C4CEECE00862309 /* HomeView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -69,9 +83,10 @@
 		7828B74D1C4C6D200095129D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				78BB4ABE1C4B503F002DEDD0 /* ViewController.swift */,
+				78BB4ABE1C4B503F002DEDD0 /* MainViewController.swift */,
 				7828B74F1C4C6DA60095129D /* BaseViewController.swift */,
 				7828B7511C4C6DBE0095129D /* PageNavViewController.swift */,
+				36500FAF1C4C99170008ACA5 /* HomeViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -82,6 +97,7 @@
 				78BB4ACB1C4B503F002DEDD0 /* Info.plist */,
 				78BB4AC31C4B503F002DEDD0 /* DemoSwiftJwcaiCoreWork.xcdatamodeld */,
 				78BB4AC61C4B503F002DEDD0 /* Assets.xcassets */,
+				36500FB11C4CB7C80008ACA5 /* DemoSwiftJwcaiCoreWork-Bridging-Header.h */,
 			);
 			name = resource;
 			sourceTree = "<group>";
@@ -239,10 +255,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7828B7501C4C6DA60095129D /* BaseViewController.swift in Sources */,
-				78BB4ABF1C4B503F002DEDD0 /* ViewController.swift in Sources */,
+				78BB4ABF1C4B503F002DEDD0 /* MainViewController.swift in Sources */,
+				36500FAE1C4C905E0008ACA5 /* Machine.swift in Sources */,
+				36FBF7551C4CEECE00862309 /* HomeView.swift in Sources */,
 				78BB4AC51C4B503F002DEDD0 /* DemoSwiftJwcaiCoreWork.xcdatamodeld in Sources */,
-				78BB4AD21C4B5274002DEDD0 /* IPhone.swift in Sources */,
+				36FBF74E1C4CCB4B00862309 /* UIViewController+RACObserve.m in Sources */,
 				78BB4ABD1C4B503F002DEDD0 /* AppDelegate.swift in Sources */,
+				36FBF7531C4CECAA00862309 /* BaseView.swift in Sources */,
+				36500FB01C4C99170008ACA5 /* HomeViewController.swift in Sources */,
 				7828B7521C4C6DBE0095129D /* PageNavViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,10 +375,13 @@
 			baseConfigurationReference = 3F73536C0526B2359DC32DEC /* Pods-DemoSwiftJwcaiCoreWork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DemoSwiftJwcaiCoreWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jw.DemoSwiftJwcaiCoreWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoSwiftJwcaiCoreWork/DemoSwiftJwcaiCoreWork-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -368,10 +391,12 @@
 			baseConfigurationReference = 95214E7D425605757EE4EE8A /* Pods-DemoSwiftJwcaiCoreWork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DemoSwiftJwcaiCoreWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jw.DemoSwiftJwcaiCoreWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoSwiftJwcaiCoreWork/DemoSwiftJwcaiCoreWork-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
