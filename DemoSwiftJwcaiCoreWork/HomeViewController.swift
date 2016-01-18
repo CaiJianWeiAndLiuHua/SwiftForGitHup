@@ -9,7 +9,26 @@
 import UIKit
 
 class HomeViewController: BaseViewController {
-
+  
+//    lazy var home:HomeView = {
+//    
+//        var homeV = HomeView()
+//        
+//        homeV.frame = CGRect(x: 0, y: 64, width: Mobile.width, height: Mobile.height - 64 - 50)
+//        
+//        
+//        return homeV
+//    
+//    
+//    
+//    }()
+    
+    
+    
+    
+    
+    
+    
     lazy var navXueCheImage:UIImageView = {
     
        
@@ -41,8 +60,10 @@ class HomeViewController: BaseViewController {
     }
     
     
-
-    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        
+        self.view .endEditing(true)
+    }
     
     
     

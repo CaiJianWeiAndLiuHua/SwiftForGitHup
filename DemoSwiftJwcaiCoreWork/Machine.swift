@@ -16,6 +16,10 @@ struct Mobile {
     
     static let width = UIScreen.mainScreen().bounds.width
     
+    
+    
+    
+    
 //   设备名称
     static let name = UIDevice.currentDevice().name
     

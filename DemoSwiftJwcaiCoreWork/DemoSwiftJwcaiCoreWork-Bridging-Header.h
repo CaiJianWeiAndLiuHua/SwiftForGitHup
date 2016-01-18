@@ -5,5 +5,8 @@
 
 #import "UIViewController+RACObserve.h"
 
+#import "DCPicScrollView.h"
+
+
 //
 #import "ReactiveCocoa.h"

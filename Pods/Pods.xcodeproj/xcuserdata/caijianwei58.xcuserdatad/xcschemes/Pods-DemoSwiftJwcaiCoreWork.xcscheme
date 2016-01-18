@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E53A23051DC672873328A68C"
+               BlueprintIdentifier = "A39CDB8AFF58BA25E8BF6C4F"
                BuildableName = "libPods-DemoSwiftJwcaiCoreWork.a"
                BlueprintName = "Pods-DemoSwiftJwcaiCoreWork"
                ReferencedContainer = "container:Pods.xcodeproj">

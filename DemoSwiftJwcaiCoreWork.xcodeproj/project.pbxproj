@@ -12,6 +12,8 @@
 		36FBF74E1C4CCB4B00862309 /* UIViewController+RACObserve.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF74D1C4CCB4B00862309 /* UIViewController+RACObserve.m */; };
 		36FBF7531C4CECAA00862309 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF7521C4CECAA00862309 /* BaseView.swift */; };
 		36FBF7551C4CEECE00862309 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF7541C4CEECE00862309 /* HomeView.swift */; };
+		36FBF7581C4CF17900862309 /* DCPicScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF7571C4CF17900862309 /* DCPicScrollView.m */; };
+		36FBF75B1C4CF37F00862309 /* DCWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF75A1C4CF37F00862309 /* DCWebImageManager.m */; };
 		7828B7501C4C6DA60095129D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828B74F1C4C6DA60095129D /* BaseViewController.swift */; };
 		7828B7521C4C6DBE0095129D /* PageNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828B7511C4C6DBE0095129D /* PageNavViewController.swift */; };
 		78BB4ABD1C4B503F002DEDD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB4ABC1C4B503F002DEDD0 /* AppDelegate.swift */; };
@@ -31,6 +33,10 @@
 		36FBF74D1C4CCB4B00862309 /* UIViewController+RACObserve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RACObserve.m"; sourceTree = "<group>"; };
 		36FBF7521C4CECAA00862309 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		36FBF7541C4CEECE00862309 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		36FBF7561C4CF17900862309 /* DCPicScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPicScrollView.h; sourceTree = "<group>"; };
+		36FBF7571C4CF17900862309 /* DCPicScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPicScrollView.m; sourceTree = "<group>"; };
+		36FBF7591C4CF37F00862309 /* DCWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCWebImageManager.h; sourceTree = "<group>"; };
+		36FBF75A1C4CF37F00862309 /* DCWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCWebImageManager.m; sourceTree = "<group>"; };
 		3F73536C0526B2359DC32DEC /* Pods-DemoSwiftJwcaiCoreWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSwiftJwcaiCoreWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoSwiftJwcaiCoreWork/Pods-DemoSwiftJwcaiCoreWork.debug.xcconfig"; sourceTree = "<group>"; };
 		7828B74F1C4C6DA60095129D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7828B7511C4C6DBE0095129D /* PageNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageNavViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +78,10 @@
 		7828B74C1C4C6D190095129D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				36FBF7591C4CF37F00862309 /* DCWebImageManager.h */,
+				36FBF75A1C4CF37F00862309 /* DCWebImageManager.m */,
+				36FBF7561C4CF17900862309 /* DCPicScrollView.h */,
+				36FBF7571C4CF17900862309 /* DCPicScrollView.m */,
 				78BB4AC81C4B503F002DEDD0 /* LaunchScreen.storyboard */,
 				78BB4AC01C4B503F002DEDD0 /* Main.storyboard */,
 				36FBF7521C4CECAA00862309 /* BaseView.swift */,
@@ -255,11 +265,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7828B7501C4C6DA60095129D /* BaseViewController.swift in Sources */,
+				36FBF75B1C4CF37F00862309 /* DCWebImageManager.m in Sources */,
 				78BB4ABF1C4B503F002DEDD0 /* MainViewController.swift in Sources */,
 				36500FAE1C4C905E0008ACA5 /* Machine.swift in Sources */,
 				36FBF7551C4CEECE00862309 /* HomeView.swift in Sources */,
 				78BB4AC51C4B503F002DEDD0 /* DemoSwiftJwcaiCoreWork.xcdatamodeld in Sources */,
 				36FBF74E1C4CCB4B00862309 /* UIViewController+RACObserve.m in Sources */,
+				36FBF7581C4CF17900862309 /* DCPicScrollView.m in Sources */,
 				78BB4ABD1C4B503F002DEDD0 /* AppDelegate.swift in Sources */,
 				36FBF7531C4CECAA00862309 /* BaseView.swift in Sources */,
 				36500FB01C4C99170008ACA5 /* HomeViewController.swift in Sources */,
@@ -377,6 +389,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DemoSwiftJwcaiCoreWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jw.DemoSwiftJwcaiCoreWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -393,6 +406,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DemoSwiftJwcaiCoreWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jw.DemoSwiftJwcaiCoreWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";

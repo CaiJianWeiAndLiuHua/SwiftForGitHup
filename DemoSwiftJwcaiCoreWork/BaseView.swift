@@ -14,6 +14,9 @@ class BaseView: UIView {
     var changeBaseViewParamer:((paramer:AnyObject?) -> Void)?
     
     
+   
+    
+    
     
 //init?(changebaseViewPara:(paramer:AnyObject) -> Void){
 //
