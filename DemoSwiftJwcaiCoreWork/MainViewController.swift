@@ -28,7 +28,9 @@ class MainViewController: UIViewController {
         let appViewsionKeyRoot = "\(Mobile.versionApp):\(Mobile.appName)"
         
         let user = NSUserDefaults.standardUserDefaults()
-        
+
+         print("child....test url \(HtppChildURL.mainURL)")
+
         
         dispatch_after(UInt64(0.5), dispatch_get_main_queue()) { () -> Void in
             

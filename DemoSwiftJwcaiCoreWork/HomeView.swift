@@ -45,7 +45,12 @@ class HomeView: BaseView {
 //    
     
     
+    func requestHttpDataView(){
     
+
+
+
+    }
     
     
     
