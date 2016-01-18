@@ -23,7 +23,16 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        AFHttpRequestData.GET(urlBase: "http://api.map.baidu.com/telematics/v3/weather", parame: ["location":"116.305145,39.982368","output":"json","ak":"E65b25b1cc0634dafb1be93818004a21"], suceessMothed: { (afManage, respone) -> Void in
+
+
+            print("respone : \(respone)")
+
+            }, errors: {(error)  in
+
+            }
+        )
         
         let appViewsionKeyRoot = "\(Mobile.versionApp):\(Mobile.appName)"
         

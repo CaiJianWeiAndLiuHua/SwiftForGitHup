@@ -21,13 +21,9 @@ enum HttpHostDebug{
 
 
 class   HTTP {
+//    修改测试环境和真实环境
   static  let debug = HttpHostDebug.HoseOnline
-
-
-
-
-
-    class  func getHostURL() -> String{
+  class  func getHostURL() -> String{
 
 
         switch debug {
@@ -54,6 +50,13 @@ class   HTTP {
 struct HtppChildURL {
 
     static let mainURL = "\(HTTP.getHostURL())/webView.com"
+
+
+
+
+
+
+
 
 
 }

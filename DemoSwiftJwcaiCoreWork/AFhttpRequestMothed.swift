@@ -15,7 +15,7 @@ class AFHttpRequestData {
     
 
     let afManger = AFHTTPRequestOperationManager()
-    afManger.responseSerializer = AFHTTPResponseSerializer()
+    afManger.responseSerializer.acceptableContentTypes = NSSet(array: ["http/text"]) as! Set<String>
 
     afManger.POST(urlBase, parameters: parame, success: {
             (operation,respone) in
@@ -38,11 +38,12 @@ class AFHttpRequestData {
 
 
         let afManger = AFHTTPRequestOperationManager()
-        afManger.responseSerializer = AFHTTPResponseSerializer()
+        afManger.responseSerializer.acceptableContentTypes = NSSet(array: ["text/html","text/javascript"]) as! Set<String>
+//        afManger.responseSerializer = AFHTTPResponseSerializer()
 
         afManger.GET(urlBase, parameters: parame, success: {
             (operation,respone) in
-            suceessMothed(afManage: operation,respone: respone)
+            suceessMothed(afManage: operation,respone: respone )
 
             }, failure: {
 
