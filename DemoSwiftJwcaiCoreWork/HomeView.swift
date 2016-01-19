@@ -7,6 +7,17 @@
 //
 
 import UIKit
+enum PageControlStyle:Int{
+    case middleView
+
+    case rightView
+
+
+
+}
+
+
+
 
 class HomeView: BaseView {
 
@@ -39,7 +50,7 @@ class HomeView: BaseView {
 
             };
         
-        
+           pic.setStyleIndex(1)
         return pic
         
         
@@ -74,7 +85,7 @@ class HomeView: BaseView {
      self.addSubview(backImageView)
 
 
-        imageArray = ["http://img4.imgtn.bdimg.com/it/u=128811874,840272376&fm=21&gp=0.jpg","http://img2.imgtn.bdimg.com/it/u=3922277475,817684749&fm=21&gp=0.jpg"];
+        imageArray = ["http://p1.qqyou.com/pic/UploadPic/2013-3/19/2013031923222781617.jpg","http://cdn.duitang.com/uploads/item/201409/27/20140927192649_NxVKT.thumb.700_0.png","http://img4.duitang.com/uploads/item/201409/27/20140927192458_GcRxV.jpeg","http://cdn.duitang.com/uploads/item/201304/20/20130420192413_TeRRP.thumb.700_0.jpeg"];
     }
 
 

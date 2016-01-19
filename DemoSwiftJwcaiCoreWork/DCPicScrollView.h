@@ -33,6 +33,10 @@ typedef NS_ENUM(NSUInteger, PageControlStyle) {
  网络加载urlsring必须为http:// 开头,
 //本地加载只需图片名字数组
 */
+
+-(void)setStyleIndex:(NSInteger)style;
+
+
 + (DCPicScrollView *)picScrollViewWithFrame:(CGRect)frame WithImageUrls:(NSArray *)imageUrl;
 //
 

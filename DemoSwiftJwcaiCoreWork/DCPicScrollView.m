@@ -129,6 +129,12 @@
     _PageControl = page;
 }
 
+
+-(void)setStyleIndex:(NSInteger)style{
+    [self setStyle:style];
+
+}
+
 - (void)setStyle:(PageControlStyle)style {
     CGFloat w = _MaxImageCount * 17.5;
     _PageControl.frame = CGRectMake(0, 0, w, 7);
