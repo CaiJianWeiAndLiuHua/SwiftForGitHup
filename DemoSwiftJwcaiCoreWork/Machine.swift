@@ -16,7 +16,7 @@ struct Mobile {
     
     static let width = UIScreen.mainScreen().bounds.width
     
-    
+    static let ratio =     width/320
     
     
     

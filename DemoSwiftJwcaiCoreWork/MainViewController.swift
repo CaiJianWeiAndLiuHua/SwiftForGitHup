@@ -29,6 +29,11 @@ class MainViewController: UIViewController {
 
             print("respone : \(respone)")
 
+//            NSUTF8StringEncoding
+//        let json =     NSString(data: respone as! NSData, encoding:NSUTF8StringEncoding )
+//
+//         pr
+
             }, errors: {(error)  in
 
             }
