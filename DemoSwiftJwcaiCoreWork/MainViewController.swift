@@ -29,7 +29,7 @@ class MainViewController: UIViewController {
         
         let user = NSUserDefaults.standardUserDefaults()
 
-         print("child....test url \(HttpChildURL.bandHomeURL)")
+         print("child....test url \(HttpChildURL.bandHomeURL)  ::: \(GetFileJson.getHomeSourceCenterData())")
 
         
         dispatch_after(UInt64(0.5), dispatch_get_main_queue()) { () -> Void in

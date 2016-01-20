@@ -28,7 +28,7 @@ class BaseWebViewController: BaseViewController {
         let urlPatch = (urlDiction![kfNameLet.url] as! String)
          self.title =  (urlDiction![kfNameLet.title] as! String)
         
-       webViewShow.loadRequest(NSURLRequest(URL: NSURL(string: urlPatch)!))
+         webViewShow.loadRequest(NSURLRequest(URL: NSURL(string: urlPatch)!))
             
         }
     

@@ -1,0 +1,58 @@
+{
+    
+    "downIntro":{
+        "content":  [
+                     {
+                     "action": {
+                     "actiontype": "loadpage",
+                     "extparam": "",
+                     "pagetype": "link",
+                     "title": "了解我们",
+                     "rightbaritemtype":2,
+                     "url": "http://www.58xueche.com/common/app_new/aboutus"
+                     },
+                     "desc": "1对1,专车接送",
+                     "iconurl": "homeIcon.bundle/women",
+                     "itemname": "了解我们"
+                     },
+                     {
+                     "action": {
+                     "actiontype": "loadpage",
+                     "extparam": "",
+                     "pagetype": "coach_list",
+                     "title": "教练",
+                     "url": ""
+                     },
+                     "desc": "服务专业,一流",
+                     "iconurl": "homeIcon.bundle/jiaolian",
+                     "itemname": "教练"
+                     },
+                     {
+                     "action": {
+                     "actiontype": "loadpage",
+                     "extparam": "",
+                     "pagetype": "link",
+                     "title": "场地",
+                     "rightbaritemtype":2,
+                     "url": "http://www.xueche.com/common/site_intro"
+                     },
+                     "desc": "遍布杭州",
+                     "iconurl": "homeIcon.bundle/changdi",
+                     "itemname": "场地"
+                     },
+                     {
+                     "action": {
+                     "actiontype": "loadpage",
+                     "extparam": "",
+                     "pagetype": "link",
+                     "title": "学车问答",
+                     "rightbaritemtype":2,
+                     "url": "http://www.58xueche.com/common/app_new/ask"
+                     },
+                     "desc": "全城最低",
+                     "iconurl": "homeIcon.bundle/wenda",
+                     "itemname": "学车问答"
+                     }]
+    }
+    
+}
