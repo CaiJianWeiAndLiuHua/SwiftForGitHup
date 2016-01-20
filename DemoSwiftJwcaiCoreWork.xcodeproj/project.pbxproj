@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		360E1A511C4F94290015BDB3 /* BaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E1A501C4F94290015BDB3 /* BaseWebViewController.swift */; };
 		36500FAE1C4C905E0008ACA5 /* Machine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36500FAD1C4C905E0008ACA5 /* Machine.swift */; };
 		36500FB01C4C99170008ACA5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36500FAF1C4C99170008ACA5 /* HomeViewController.swift */; };
 		36FBF74E1C4CCB4B00862309 /* UIViewController+RACObserve.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF74D1C4CCB4B00862309 /* UIViewController+RACObserve.m */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		360E1A501C4F94290015BDB3 /* BaseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebViewController.swift; sourceTree = "<group>"; };
 		36500FAD1C4C905E0008ACA5 /* Machine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Machine.swift; sourceTree = "<group>"; };
 		36500FAF1C4C99170008ACA5 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		36500FB11C4CB7C80008ACA5 /* DemoSwiftJwcaiCoreWork-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoSwiftJwcaiCoreWork-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				7828B74F1C4C6DA60095129D /* BaseViewController.swift */,
 				7828B7511C4C6DBE0095129D /* PageNavViewController.swift */,
 				36500FAF1C4C99170008ACA5 /* HomeViewController.swift */,
+				360E1A501C4F94290015BDB3 /* BaseWebViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				360E1A511C4F94290015BDB3 /* BaseWebViewController.swift in Sources */,
 				7828B7501C4C6DA60095129D /* BaseViewController.swift in Sources */,
 				7879E6E91C4D1CC10038852F /* AFhttpRequestMothed.swift in Sources */,
 				36FBF75B1C4CF37F00862309 /* DCWebImageManager.m in Sources */,

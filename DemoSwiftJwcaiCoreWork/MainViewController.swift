@@ -24,26 +24,12 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        AFHttpRequestData.GET(urlBase: "http://api.map.baidu.com/telematics/v3/weather", parame: ["location":"116.305145,39.982368","output":"json","ak":"E65b25b1cc0634dafb1be93818004a21"], suceessMothed: { (afManage, respone) -> Void in
-
-
-            print("respone : \(respone)")
-
-//            NSUTF8StringEncoding
-//        let json =     NSString(data: respone as! NSData, encoding:NSUTF8StringEncoding )
-//
-//         pr
-
-            }, errors: {(error)  in
-
-            }
-        )
-        
+              
         let appViewsionKeyRoot = "\(Mobile.versionApp):\(Mobile.appName)"
         
         let user = NSUserDefaults.standardUserDefaults()
 
-         print("child....test url \(HtppChildURL.mainURL)")
+         print("child....test url \(HttpChildURL.bandHomeURL)")
 
         
         dispatch_after(UInt64(0.5), dispatch_get_main_queue()) { () -> Void in

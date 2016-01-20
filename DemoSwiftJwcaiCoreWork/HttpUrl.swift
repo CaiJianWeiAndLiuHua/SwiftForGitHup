@@ -29,10 +29,10 @@ class   HTTP {
         switch debug {
 
         case .Debug:
-            return "debug url"
+            return "http://api.xueche.test.58v5.cn"
 
         case .HoseOnline:
-            return "onLine url"
+            return "http://api.58xueche.com"
 
         default:
 
@@ -47,9 +47,9 @@ class   HTTP {
     
 }
 
-struct HtppChildURL {
+struct HttpChildURL {
 
-    static let mainURL = "\(HTTP.getHostURL())/webView.com"
+    static let bandHomeURL = "\(HTTP.getHostURL())/ads/pic"
 
 
 
@@ -60,6 +60,35 @@ struct HtppChildURL {
 
 
 }
+
+//常用定义变量用于
+
+struct kfNameLet {
+    
+    static let apiversion = "apiversion"
+    static let appviewsion = "appversion"
+    static let os = "os"
+    static let productorid = "productorid"
+    
+    
+    
+    static let imageurl = "imageurl"
+    
+    static let result  = "result"
+    
+    static let list  = "list"
+    
+    static let action = "action"
+    
+    static let url = "url"
+    
+    
+    static let title = "title"
+    
+}
+
+
+
 
 
 

@@ -19,13 +19,19 @@ enum PageControlStyle:Int{
 
 
 
+
+
 class HomeView: BaseView {
+
+var didSelectAction:((NSDictionary) -> Void)!
+    
 
     
  private   var  imageArray:[String]? {
     
         didSet{
-        
+          
+            
             self .addSubview(picHomeScollView)
         
         }
@@ -33,18 +39,40 @@ class HomeView: BaseView {
     
     }
     
-
+    private  var allDataList:NSArray?{
+      
+        didSet{
+            var listArray:[String] = Array<String>();
+            for  dicJson  in allDataList!{
+            
+                 listArray.append(dicJson[kfNameLet.imageurl] as! String)
+            
+            }
+            
+           imageArray = listArray
+        }
+    
+    
+    }
     
     
     lazy var picHomeScollView:DCPicScrollView  = {
         if let _ = self.imageArray {
             var pic:DCPicScrollView = DCPicScrollView.init(frame: CGRectMake(0, 0, Mobile.width, 100.0 * Mobile.ratio), withImageUrls: self.imageArray)
             pic.AutoScrollDelay = 4.0
-
+            
             pic.imageViewDidTapAtIndex =  {
 
              (index)  in
-
+                
+//                if let _ = didSelectAction{
+//                kfNameLet.list
+                let  actionURL = ((self.allDataList![index] as! NSDictionary)[kfNameLet.action] as! NSDictionary)
+                
+                     self.didSelectAction(actionURL)
+                
+//                }
+                
                 print("index \(index)")
 
 
@@ -83,9 +111,23 @@ class HomeView: BaseView {
 //    请求轮播图
     func requestHttpDataView(){
      self.addSubview(backImageView)
+      
+        
+        AFHttpRequestData.POST(urlBase: HttpChildURL.bandHomeURL, parame: [kfNameLet.apiversion:Mobile.versionApp,kfNameLet.os:"ios",kfNameLet.productorid:"29"], suceessMothed: { (afManage, respone) -> Void in
+            
+            let dicJosData = (respone as! NSDictionary)
+            let arrayJson = (dicJosData[kfNameLet.result] as! NSDictionary)[kfNameLet.list]
+             print("json :: \(dicJosData) arrray :: \(arrayJson!)")
+            
+             self.allDataList =  (arrayJson! as! NSArray)
+            }, errors: {(error)  in
+                
+            }
+            
+            
+            
+        )
 
-
-        imageArray = ["http://p1.qqyou.com/pic/UploadPic/2013-3/19/2013031923222781617.jpg","http://cdn.duitang.com/uploads/item/201409/27/20140927192649_NxVKT.thumb.700_0.png","http://img4.duitang.com/uploads/item/201409/27/20140927192458_GcRxV.jpeg","http://cdn.duitang.com/uploads/item/201304/20/20130420192413_TeRRP.thumb.700_0.jpeg"];
     }
 
 

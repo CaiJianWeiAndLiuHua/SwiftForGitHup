@@ -1,7 +1,9 @@
 
 import UIKit
 class HomeViewController: BaseViewController {
-
+    
+    var dicJson:NSDictionary?
+    
     lazy var rightButton:UIButton = {
 
         let buttonRight = UIButton(frame: CGRect(x: 20, y: 20, width: 44, height: 30))
@@ -42,6 +44,17 @@ class HomeViewController: BaseViewController {
 
         homeV.backgroundColor = UIColor.purpleColor()
         homeV.requestHttpDataView()
+        homeV.didSelectAction = {
+         (dicJ) in
+            
+            self.dicJson = (dicJ as! NSDictionary)
+            
+            self.performSegueWithIdentifier("mainWebViewController", sender: nil);
+            print("aciton index \(index)")
+            
+          
+        
+        }
 
         return homeV
 
@@ -62,7 +75,17 @@ class HomeViewController: BaseViewController {
     }()
 
 
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if (segue.destinationViewController.isKindOfClass(BaseWebViewController.classForCoder()) ){
+        
+            (segue.destinationViewController as! BaseWebViewController).urlDiction = self.dicJson
+            
+        }
+        
+        
+        
+    }
 
 
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {

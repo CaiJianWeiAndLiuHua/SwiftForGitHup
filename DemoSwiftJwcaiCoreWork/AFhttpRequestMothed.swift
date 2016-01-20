@@ -15,7 +15,7 @@ class AFHttpRequestData {
     
 
     let afManger = AFHTTPRequestOperationManager()
-    afManger.responseSerializer  = AFHTTPResponseSerializer()
+    afManger.responseSerializer.acceptableContentTypes = NSSet(array: ["text/html","text/javascript"]) as! Set<String>
 
     afManger.POST(urlBase, parameters: parame, success: {
             (operation,respone) in

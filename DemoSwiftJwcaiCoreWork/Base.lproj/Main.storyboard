@@ -76,10 +76,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="kHy-2n-Gj1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="WLR-Lw-Ipj" kind="push" identifier="mainWebViewController" id="hBP-ee-eCe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rRf-nK-2fR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1272" y="450"/>
+            <point key="canvasLocation" x="0.0" y="2154"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4wE-rp-lpI">
@@ -99,6 +102,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="38n-BW-gpB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="740" y="766"/>
+        </scene>
+        <!--Base Web View Controller-->
+        <scene sceneID="1Ha-3b-zfQ">
+            <objects>
+                <viewController id="WLR-Lw-Ipj" customClass="BaseWebViewController" customModule="DemoSwiftJwcaiCoreWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="15A-W6-9ls"/>
+                        <viewControllerLayoutGuide type="bottom" id="fZb-Fl-ELH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OSL-Tr-IeQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ppi-VV-wxP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WES-hO-8o3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="2104"/>
         </scene>
     </scenes>
     <resources>
