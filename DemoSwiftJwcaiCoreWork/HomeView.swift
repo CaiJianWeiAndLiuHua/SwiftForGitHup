@@ -89,6 +89,33 @@ var didSelectAction:((NSDictionary) -> Void)!
     
     }()
 
+    lazy var homedrawTouch:HomeDrawTouchView = {
+
+        var homedraw = HomeDrawTouchView(frame:CGRect(x: 30, y: 120, width: 80, height: 80))
+        homedraw.font = 25.0
+        homedraw.backgroundColor = UIColor.grayColor()
+        homedraw.showMessageString = "你"
+
+//        homedraw .setNeedsDisplay()
+
+        homedraw.touchCommand = {
+
+        (dicJson) in
+
+            print("json :: \(dicJson)")
+
+
+        }
+        homedraw.dicJsonParamer = ["key":"value"]
+
+        return homedraw
+
+    }();
+
+
+
+
+
     func TapIndex(index:NSInteger) -> Void {
 
         print("tap...... select \(index)")
@@ -111,7 +138,7 @@ var didSelectAction:((NSDictionary) -> Void)!
 //    请求轮播图
     func requestHttpDataView(){
      self.addSubview(backImageView)
-      
+      addSubview(homedrawTouch)
         
         AFHttpRequestData.POST(urlBase: HttpChildURL.bandHomeURL, parame: [kfNameLet.apiversion:Mobile.versionApp,kfNameLet.os:"ios",kfNameLet.productorid:"29"], suceessMothed: { (afManage, respone) -> Void in
             

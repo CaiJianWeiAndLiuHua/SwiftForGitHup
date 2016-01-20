@@ -19,6 +19,7 @@
 		36FBF75B1C4CF37F00862309 /* DCWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF75A1C4CF37F00862309 /* DCWebImageManager.m */; };
 		7828B7501C4C6DA60095129D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828B74F1C4C6DA60095129D /* BaseViewController.swift */; };
 		7828B7521C4C6DBE0095129D /* PageNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828B7511C4C6DBE0095129D /* PageNavViewController.swift */; };
+		7830E7A91C4FCA8400B47353 /* HomeDrawTouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7830E7A81C4FCA8400B47353 /* HomeDrawTouchView.swift */; };
 		7879E6E91C4D1CC10038852F /* AFhttpRequestMothed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7879E6E81C4D1CC10038852F /* AFhttpRequestMothed.swift */; };
 		7879E6EB1C4D223B0038852F /* HttpUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7879E6EA1C4D223B0038852F /* HttpUrl.swift */; };
 		78BB4ABD1C4B503F002DEDD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB4ABC1C4B503F002DEDD0 /* AppDelegate.swift */; };
@@ -48,6 +49,7 @@
 		3F73536C0526B2359DC32DEC /* Pods-DemoSwiftJwcaiCoreWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSwiftJwcaiCoreWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoSwiftJwcaiCoreWork/Pods-DemoSwiftJwcaiCoreWork.debug.xcconfig"; sourceTree = "<group>"; };
 		7828B74F1C4C6DA60095129D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7828B7511C4C6DBE0095129D /* PageNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageNavViewController.swift; sourceTree = "<group>"; };
+		7830E7A81C4FCA8400B47353 /* HomeDrawTouchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDrawTouchView.swift; sourceTree = "<group>"; };
 		7879E6E81C4D1CC10038852F /* AFhttpRequestMothed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFhttpRequestMothed.swift; sourceTree = "<group>"; };
 		7879E6EA1C4D223B0038852F /* HttpUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpUrl.swift; sourceTree = "<group>"; };
 		78BB4AB91C4B503F002DEDD0 /* DemoSwiftJwcaiCoreWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoSwiftJwcaiCoreWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +101,7 @@
 				78BB4AC01C4B503F002DEDD0 /* Main.storyboard */,
 				36FBF7521C4CECAA00862309 /* BaseView.swift */,
 				36FBF7541C4CEECE00862309 /* HomeView.swift */,
+				7830E7A81C4FCA8400B47353 /* HomeDrawTouchView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				78BB4ABF1C4B503F002DEDD0 /* MainViewController.swift in Sources */,
 				360E1A551C4FAF010015BDB3 /* GetFileJson.swift in Sources */,
 				36500FAE1C4C905E0008ACA5 /* Machine.swift in Sources */,
+				7830E7A91C4FCA8400B47353 /* HomeDrawTouchView.swift in Sources */,
 				36FBF7551C4CEECE00862309 /* HomeView.swift in Sources */,
 				78BB4AC51C4B503F002DEDD0 /* DemoSwiftJwcaiCoreWork.xcdatamodeld in Sources */,
 				36FBF74E1C4CCB4B00862309 /* UIViewController+RACObserve.m in Sources */,
