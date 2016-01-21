@@ -1,12 +1,24 @@
 
 import UIKit
 class HomeViewController: BaseViewController {
-    
+
+    private let tagIndexOne  = 100
+
+    private let tagIndexTwo  = 200
+
+    private let tagIndexThree = 300
+
+
+
+
+
     var dicJson:NSDictionary?
     
     lazy var rightButton:UIButton = {
 
         let buttonRight = UIButton(frame: CGRect(x: 20, y: 20, width: 44, height: 30))
+
+//        buttonRight.frame = CGRectOffset(buttonRight.frame, -20, 40)
 
         buttonRight.rac_command = RACCommand(signalBlock: { (buttonRight) -> RACSignal! in
 
