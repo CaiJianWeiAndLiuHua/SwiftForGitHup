@@ -24,7 +24,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-
+    
         let appViewsionKeyRoot = "\(Mobile.versionApp):\(Mobile.appName)"
         
         let user = NSUserDefaults.standardUserDefaults()

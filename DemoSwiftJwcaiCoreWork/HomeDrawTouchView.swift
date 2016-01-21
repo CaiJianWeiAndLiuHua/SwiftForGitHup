@@ -15,42 +15,40 @@ import UIKit
 class HomeDrawTouchView: UIView {
 
 
+    
     var touchCommand:((NSDictionary) -> Void)!
-
-
-    var dicJsonParamer:NSDictionary?{
-
-        didSet{
-
-
-        }
-
-    }
-
-    lazy var lableCalculate:UILabel = {
-
-        var lable = UILabel(frame: self.frame)
-
-
-        return lable
-    }();
-
-
-//    override func setFrame(frame:CGRect){
-//        super.setFrame(frame)
-//
-//
-//    }
-
-
-
+    var highlightedTouchColor:UIColor = RGBA(240, 240, 240, 0.5) {didSet{setNeedsDisplay()}}
+    var normalTouchColor:UIColor = RGB(255, 0, 0)
+    
+    
 
     var showMessageString:NSString = "好一个"  { didSet { setNeedsDisplay() } }
 
     var font:CGFloat = 14 { didSet { setNeedsDisplay() } }
 
 
+    
+    
+    
+    lazy var lableCalculate:UILabel = {
+        
+        var lable = UILabel(frame: self.frame)
+        
+        
+        return lable
+    }();
 
+
+    var dicJsonParamer:NSDictionary?{
+        
+        didSet{
+            
+            setNeedsDisplay()
+        }
+        
+    }
+    
+    
 
 //
     private func calculateWidth(rect:CGRect) -> CGPoint{
@@ -59,16 +57,17 @@ class HomeDrawTouchView: UIView {
         lableCalculate.font = UIFont.systemFontOfSize(font)
         lableCalculate.text = showMessageString as String
         lableCalculate.sizeToFit()
-
+//        UIControlState.Normal
       print("frame:: \(lableCalculate.frame)")
 
        let frameFont = lableCalculate.frame
+        let y = frameFont.height
        let x  = (bounds.size.width - min(frameFont.size.width, bounds.size.width))/2
       print("xx:: \(x)")
        lableCalculate.removeFromSuperview()
 
 
-      return CGPoint(x: x, y: bounds.height - 23 * Mobile.ratio)
+      return CGPoint(x: x, y: bounds.height - 8 * Mobile.ratio - y)
 
     }
 
@@ -91,12 +90,12 @@ class HomeDrawTouchView: UIView {
     }
 
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-            backgroundColor = UIColor.redColor()
+            backgroundColor = highlightedTouchColor
     }
 
 
   override  func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-          backgroundColor = UIColor.grayColor()
+          backgroundColor = normalTouchColor
          setNeedsDisplay()
 
        dispatch_after(UInt64(0.5), dispatch_get_main_queue()) { () -> Void in

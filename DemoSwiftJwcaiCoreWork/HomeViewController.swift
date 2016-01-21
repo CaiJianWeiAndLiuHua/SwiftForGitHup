@@ -47,7 +47,7 @@ class HomeViewController: BaseViewController {
         homeV.didSelectAction = {
          (dicJ) in
             
-            self.dicJson = (dicJ as! NSDictionary)
+            self.dicJson = dicJ
             
             self.performSegueWithIdentifier("mainWebViewController", sender: nil);
             print("aciton index \(index)")
@@ -105,6 +105,9 @@ class HomeViewController: BaseViewController {
         view.addSubview(home)
         view.addSubview(rightButton)
         view.addSubview(leftButton)
+        
+//        view.backgroundColor = RGB(0, 0, 255)
+        view.backgroundColor = ColorHex(hex: 0xff0000)
         
     }
     

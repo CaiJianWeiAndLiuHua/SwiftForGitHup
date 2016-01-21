@@ -10,6 +10,8 @@
 		360E1A511C4F94290015BDB3 /* BaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E1A501C4F94290015BDB3 /* BaseWebViewController.swift */; };
 		360E1A531C4FAEBF0015BDB3 /* xc_home.json in Resources */ = {isa = PBXBuildFile; fileRef = 360E1A521C4FAEBF0015BDB3 /* xc_home.json */; };
 		360E1A551C4FAF010015BDB3 /* GetFileJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E1A541C4FAF010015BDB3 /* GetFileJson.swift */; };
+		36249F2E1C50778400CF32D8 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36249F2D1C50778400CF32D8 /* Tool.swift */; };
+		36249F301C508C3000CF32D8 /* JsonKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36249F2F1C508C3000CF32D8 /* JsonKey.swift */; };
 		36500FAE1C4C905E0008ACA5 /* Machine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36500FAD1C4C905E0008ACA5 /* Machine.swift */; };
 		36500FB01C4C99170008ACA5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36500FAF1C4C99170008ACA5 /* HomeViewController.swift */; };
 		36FBF74E1C4CCB4B00862309 /* UIViewController+RACObserve.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF74D1C4CCB4B00862309 /* UIViewController+RACObserve.m */; };
@@ -35,6 +37,8 @@
 		360E1A501C4F94290015BDB3 /* BaseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebViewController.swift; sourceTree = "<group>"; };
 		360E1A521C4FAEBF0015BDB3 /* xc_home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = xc_home.json; sourceTree = "<group>"; };
 		360E1A541C4FAF010015BDB3 /* GetFileJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetFileJson.swift; sourceTree = "<group>"; };
+		36249F2D1C50778400CF32D8 /* Tool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
+		36249F2F1C508C3000CF32D8 /* JsonKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonKey.swift; sourceTree = "<group>"; };
 		36500FAD1C4C905E0008ACA5 /* Machine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Machine.swift; sourceTree = "<group>"; };
 		36500FAF1C4C99170008ACA5 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		36500FB11C4CB7C80008ACA5 /* DemoSwiftJwcaiCoreWork-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoSwiftJwcaiCoreWork-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 				7879E6E81C4D1CC10038852F /* AFhttpRequestMothed.swift */,
 				7879E6EA1C4D223B0038852F /* HttpUrl.swift */,
 				360E1A541C4FAF010015BDB3 /* GetFileJson.swift */,
+				36249F2D1C50778400CF32D8 /* Tool.swift */,
+				36249F2F1C508C3000CF32D8 /* JsonKey.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -289,6 +295,7 @@
 				36FBF75B1C4CF37F00862309 /* DCWebImageManager.m in Sources */,
 				7879E6EB1C4D223B0038852F /* HttpUrl.swift in Sources */,
 				78BB4ABF1C4B503F002DEDD0 /* MainViewController.swift in Sources */,
+				36249F301C508C3000CF32D8 /* JsonKey.swift in Sources */,
 				360E1A551C4FAF010015BDB3 /* GetFileJson.swift in Sources */,
 				36500FAE1C4C905E0008ACA5 /* Machine.swift in Sources */,
 				7830E7A91C4FCA8400B47353 /* HomeDrawTouchView.swift in Sources */,
@@ -298,6 +305,7 @@
 				36FBF7581C4CF17900862309 /* DCPicScrollView.m in Sources */,
 				78BB4ABD1C4B503F002DEDD0 /* AppDelegate.swift in Sources */,
 				36FBF7531C4CECAA00862309 /* BaseView.swift in Sources */,
+				36249F2E1C50778400CF32D8 /* Tool.swift in Sources */,
 				36500FB01C4C99170008ACA5 /* HomeViewController.swift in Sources */,
 				7828B7521C4C6DBE0095129D /* PageNavViewController.swift in Sources */,
 			);

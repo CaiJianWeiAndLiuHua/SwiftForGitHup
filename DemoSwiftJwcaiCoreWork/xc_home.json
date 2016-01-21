@@ -12,7 +12,7 @@
                      "url": "http://www.58xueche.com/common/app_new/aboutus"
                      },
                      "desc": "1对1,专车接送",
-                     "iconurl": "homeIcon.bundle/women",
+                     "iconurl": "women",
                      "itemname": "了解我们"
                      },
                      {
@@ -24,7 +24,7 @@
                      "url": ""
                      },
                      "desc": "服务专业,一流",
-                     "iconurl": "homeIcon.bundle/jiaolian",
+                     "iconurl": "jiaolian",
                      "itemname": "教练"
                      },
                      {
@@ -37,7 +37,7 @@
                      "url": "http://www.xueche.com/common/site_intro"
                      },
                      "desc": "遍布杭州",
-                     "iconurl": "homeIcon.bundle/changdi",
+                     "iconurl": "changdi",
                      "itemname": "场地"
                      },
                      {
@@ -50,7 +50,7 @@
                      "url": "http://www.58xueche.com/common/app_new/ask"
                      },
                      "desc": "全城最低",
-                     "iconurl": "homeIcon.bundle/wenda",
+                     "iconurl": "wenda",
                      "itemname": "学车问答"
                      }]
     }

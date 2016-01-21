@@ -91,10 +91,12 @@ var didSelectAction:((NSDictionary) -> Void)!
 
     lazy var homedrawTouch:HomeDrawTouchView = {
 
-        var homedraw = HomeDrawTouchView(frame:CGRect(x: 30, y: 120, width: 80, height: 80))
-        homedraw.font = 25.0
+        var homedraw = HomeDrawTouchView(frame:CGRect(x: 0, y: 110.0 * Mobile.ratio , width: Mobile.width/2 - 0.5, height: 80))
+        homedraw.font = 14.0
         homedraw.backgroundColor = UIColor.grayColor()
-        homedraw.showMessageString = "你"
+        homedraw.normalTouchColor = homedraw.backgroundColor!
+        
+        homedraw.showMessageString = "你我邪恶"
 
 //        homedraw .setNeedsDisplay()
 
@@ -113,6 +115,18 @@ var didSelectAction:((NSDictionary) -> Void)!
     }();
 
 
+    func creatMiddleView(){
+    let dicJosn = GetFileJson.getHomeSourceCenterData()
+    
+    
+    
+    
+    
+    }
+    
+    
+    
+    
 
 
 
@@ -134,11 +148,34 @@ var didSelectAction:((NSDictionary) -> Void)!
 
 
     }()
+    
+    
+    
+    
+    
+    lazy var homeSollView:UIScrollView = {
+    
+    
+        var scroll = UIScrollView(frame: CGRect(x: 0, y: 0, width: Mobile.width, height: Mobile.height - 64 - 50))
+        scroll.backgroundColor = UIColor.purpleColor()
+         scroll.addSubview(self.backImageView)
+    
+         scroll.addSubview(self.homedrawTouch)
+        
+    return scroll
+    }()
+    
+    
+    
+    
+    
+    
+    
 
 //    请求轮播图
     func requestHttpDataView(){
-     self.addSubview(backImageView)
-      addSubview(homedrawTouch)
+     self.addSubview(homeSollView)
+      
         
         AFHttpRequestData.POST(urlBase: HttpChildURL.bandHomeURL, parame: [kfNameLet.apiversion:Mobile.versionApp,kfNameLet.os:"ios",kfNameLet.productorid:"29"], suceessMothed: { (afManage, respone) -> Void in
             
