@@ -42,15 +42,21 @@ class HomeViewController: BaseViewController {
 
         var homeV = HomeView(frame:CGRect(x: 0, y: 64, width: Mobile.width, height: Mobile.height - 64 - 50))
 
-        homeV.backgroundColor = UIColor.purpleColor()
+        homeV.backgroundColor = RGBA(240,240,240,1)
         homeV.requestHttpDataView()
         homeV.didSelectAction = {
          (dicJ) in
             
             self.dicJson = dicJ
             
-            self.performSegueWithIdentifier("mainWebViewController", sender: nil);
-            print("aciton index \(index)")
+            if  ("link" as NSString).isEqualToString(  dicJ[ACTION.pagetype] as! String ){
+            
+                self.performSegueWithIdentifier("mainWebViewController", sender: nil);
+                print("aciton index \(index)")
+            }
+            
+            
+           
             
           
         

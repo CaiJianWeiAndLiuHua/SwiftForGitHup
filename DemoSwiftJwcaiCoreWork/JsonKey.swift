@@ -15,5 +15,16 @@ struct KEY_NAME {
     
       static let  content = "content"
     
+      static  let  action = "action"
+    
+      static let  desc   = "desc"
+    
+    
+      static let  itemname = "itemname"
+    
+      static let    iconurl = "iconurl"
+    
+ 
+    
     
 }

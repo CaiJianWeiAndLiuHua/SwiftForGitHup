@@ -88,6 +88,24 @@ struct kfNameLet {
 }
 
 
+struct ACTION {
+    
+       static let  actiontype = "actiontype"
+    
+       static let  extparam = "extparam"
+    
+       static let   pagetype  = "pagetype"
+    
+       static let   rightbaritemtype = "rightbaritemtype"
+    
+       static let    title = "title"
+    
+       static let     url  = "url"
+    
+    
+}
+
+
 
 
 

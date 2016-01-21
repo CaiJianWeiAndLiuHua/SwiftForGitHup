@@ -20,6 +20,14 @@ class HomeDrawTouchView: UIView {
     var highlightedTouchColor:UIColor = RGBA(240, 240, 240, 0.5) {didSet{setNeedsDisplay()}}
     var normalTouchColor:UIColor = RGB(255, 0, 0)
     
+    var heartImageName:NSString = "women" {
+    
+    
+        didSet{ setNeedsDisplay() }
+    
+    }
+    
+    
     
 
     var showMessageString:NSString = "好一个"  { didSet { setNeedsDisplay() } }
@@ -80,7 +88,7 @@ class HomeDrawTouchView: UIView {
 //     let image = UIImage()
 
 //        let string:NSString = "hello"
-
+         drawImage(rect)
         if  let message:NSString = showMessageString{
 
            message.drawInRect(CGRect(origin: calculateWidth(rect), size: bounds.size), withAttributes: [NSForegroundColorAttributeName:UIColor.redColor(),NSFontAttributeName:UIFont.systemFontOfSize(font)])
@@ -88,6 +96,32 @@ class HomeDrawTouchView: UIView {
 
 
     }
+    
+    func drawImage(rect:CGRect){
+    
+       let width = CGRectGetWidth(rect)
+        let hight = CGRectGetHeight(rect)
+        
+        if let imageURLPath:NSString = self.heartImageName{
+        
+           let image = UIImage(named: imageURLPath as String)
+            
+            image?.drawInRect(CGRect(x: width/2 - hight/4, y: 10 * Mobile.ratio, width: hight/2, height: hight/2))
+            
+            
+            
+            
+        }
+        
+        
+    
+    
+    
+    }
+    
+    
+    
+    
 
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
             backgroundColor = highlightedTouchColor
@@ -101,9 +135,11 @@ class HomeDrawTouchView: UIView {
        dispatch_after(UInt64(0.5), dispatch_get_main_queue()) { () -> Void in
 
         if let touchClick:(NSDictionary) -> Void = self.touchCommand {
-
-              touchClick(self.dicJsonParamer!)
-
+            
+            if  let acitonDiction:NSDictionary   =     self.dicJsonParamer![KEY_NAME.action] as? NSDictionary{
+            
+              touchClick(acitonDiction)
+            }
         }
 
     }

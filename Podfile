@@ -6,8 +6,12 @@ target 'DemoSwiftJwcaiCoreWork' do
     
     pod 'AFNetworking', '~> 2.6.0'
     
-    
-    pod 'ReactiveCocoa','~> 2.5'
+#    use_frameworks!
+    #
+     pod 'ReactiveCocoa','~> 2.5'
+    #
+#    source 'https://github.com/CocoaPods/Specs.git'
+
     
     
     pod 'MJRefresh', '~> 2.4.11'

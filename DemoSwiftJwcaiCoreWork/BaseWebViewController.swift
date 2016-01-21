@@ -22,13 +22,21 @@ class BaseWebViewController: BaseViewController {
     
     
     
-    var urlDiction:NSDictionary?{
+    var urlDiction:NSDictionary? {
     
         didSet{
-        let urlPatch = (urlDiction![kfNameLet.url] as! String)
-         self.title =  (urlDiction![kfNameLet.title] as! String)
-        
-         webViewShow.loadRequest(NSURLRequest(URL: NSURL(string: urlPatch)!))
+            
+            let dicJson:NSDictionary = urlDiction!
+            
+            if let   _ = dicJson[kfNameLet.url]{
+            
+                webViewShow.loadRequest(NSURLRequest(URL: NSURL(string: dicJson[kfNameLet.url] as! String)!))
+
+                
+            }
+            
+                
+                self.title =  (urlDiction![kfNameLet.title] as! String)
             
         }
     
