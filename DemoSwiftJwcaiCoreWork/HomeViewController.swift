@@ -13,6 +13,17 @@ class HomeViewController: BaseViewController {
 
 
     var dicJson:NSDictionary?
+
+    lazy var bottomView:BottomViewTouch = {
+
+        var bottom = BottomViewTouch.initWithFrameView(CGRect(x: 0, y: Mobile.height - 50 * Mobile.ratio , width: Mobile.width, height: 50 * Mobile.ratio))
+
+
+        return bottom
+    }()
+
+
+
     
     lazy var rightButton:UIButton = {
 
@@ -116,7 +127,7 @@ class HomeViewController: BaseViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
+        self.edgesForExtendedLayout = .None
         
         navLable.removeFromSuperview()
         view.addSubview(navXueCheImage)
@@ -126,6 +137,8 @@ class HomeViewController: BaseViewController {
         
 //        view.backgroundColor = RGB(0, 0, 255)
         view.backgroundColor = ColorHex(hex: 0xff0000)
+
+        view.addSubview(bottomView)
         
     }
     
