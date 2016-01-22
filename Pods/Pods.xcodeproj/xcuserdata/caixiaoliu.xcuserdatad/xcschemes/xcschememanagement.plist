@@ -9,33 +9,38 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 		<key>MJRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<key>MRProgress.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>4</integer>
 		</dict>
 		<key>Pods-DemoSwiftJwcaiCoreWork.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>2</integer>
 		</dict>
 		<key>ReactiveCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>3</integer>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -50,7 +55,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>4049B689FD5AC549FA40EF7FAE3EFD72</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>410B25DF16EA5C5B3E2698F74F9625FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50B42AA7ED821FE2B5C79D147DF96722</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -96,6 +111,11 @@
 			<true/>
 		</dict>
 		<key>D24B6EAF8DCE30E4DF197413A5B3CD10</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EF33C6AB8E679D1709305F8A888A628B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
