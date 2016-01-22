@@ -42,11 +42,29 @@ struct Mobile {
     static let  appName = NSBundle.mainBundle().infoDictionary!["CFBundleName"]!
     
     
+    
+    
+    
 }
 
 
 
-
+struct Constand {
+    
+    static let apiversion = "4"
+    
+    static let channelid = "80000"
+    
+    static let os = "ios"
+    
+    static let productorid = "29"
+    
+    
+//    用于测试数据
+     static let  phonedes = "E17CF375E1EF1E82E2D0AD8B7DC805AE"
+    
+    
+}
 
 
 

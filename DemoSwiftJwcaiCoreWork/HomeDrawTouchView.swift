@@ -14,6 +14,9 @@ import UIKit
 
 class HomeDrawTouchView: UIView {
 
+    
+    
+    
 
     
     var touchCommand:((NSDictionary) -> Void)!

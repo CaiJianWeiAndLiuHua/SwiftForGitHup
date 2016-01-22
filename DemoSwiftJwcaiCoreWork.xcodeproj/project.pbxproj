@@ -12,6 +12,7 @@
 		360E1A551C4FAF010015BDB3 /* GetFileJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E1A541C4FAF010015BDB3 /* GetFileJson.swift */; };
 		36249F2E1C50778400CF32D8 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36249F2D1C50778400CF32D8 /* Tool.swift */; };
 		36249F301C508C3000CF32D8 /* JsonKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36249F2F1C508C3000CF32D8 /* JsonKey.swift */; };
+		364DC4EE1C51F754000EA106 /* HttpEnrollRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364DC4ED1C51F754000EA106 /* HttpEnrollRequestData.swift */; };
 		36500FAE1C4C905E0008ACA5 /* Machine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36500FAD1C4C905E0008ACA5 /* Machine.swift */; };
 		36500FB01C4C99170008ACA5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36500FAF1C4C99170008ACA5 /* HomeViewController.swift */; };
 		36DF03291C50D00100538D2D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DF03281C50D00100538D2D /* StringExtension.swift */; };
@@ -20,6 +21,9 @@
 		36FBF7551C4CEECE00862309 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF7541C4CEECE00862309 /* HomeView.swift */; };
 		36FBF7581C4CF17900862309 /* DCPicScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF7571C4CF17900862309 /* DCPicScrollView.m */; };
 		36FBF75B1C4CF37F00862309 /* DCWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF75A1C4CF37F00862309 /* DCWebImageManager.m */; };
+		36FD62791C51FED300F693BF /* EnrollViewTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD62781C51FED300F693BF /* EnrollViewTableView.swift */; };
+		36FD627C1C52090A00F693BF /* EnrollTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD627B1C52090A00F693BF /* EnrollTableViewCell.swift */; };
+		36FD627E1C5232C000F693BF /* EnrollViewWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD627D1C5232C000F693BF /* EnrollViewWebViewController.swift */; };
 		7828B7501C4C6DA60095129D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828B74F1C4C6DA60095129D /* BaseViewController.swift */; };
 		7828B7521C4C6DBE0095129D /* PageNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828B7511C4C6DBE0095129D /* PageNavViewController.swift */; };
 		7830E7A91C4FCA8400B47353 /* HomeDrawTouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7830E7A81C4FCA8400B47353 /* HomeDrawTouchView.swift */; };
@@ -40,6 +44,7 @@
 		360E1A541C4FAF010015BDB3 /* GetFileJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetFileJson.swift; sourceTree = "<group>"; };
 		36249F2D1C50778400CF32D8 /* Tool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 		36249F2F1C508C3000CF32D8 /* JsonKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonKey.swift; sourceTree = "<group>"; };
+		364DC4ED1C51F754000EA106 /* HttpEnrollRequestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpEnrollRequestData.swift; sourceTree = "<group>"; };
 		36500FAD1C4C905E0008ACA5 /* Machine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Machine.swift; sourceTree = "<group>"; };
 		36500FAF1C4C99170008ACA5 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		36500FB11C4CB7C80008ACA5 /* DemoSwiftJwcaiCoreWork-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoSwiftJwcaiCoreWork-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -52,6 +57,9 @@
 		36FBF7571C4CF17900862309 /* DCPicScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPicScrollView.m; sourceTree = "<group>"; };
 		36FBF7591C4CF37F00862309 /* DCWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCWebImageManager.h; sourceTree = "<group>"; };
 		36FBF75A1C4CF37F00862309 /* DCWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCWebImageManager.m; sourceTree = "<group>"; };
+		36FD62781C51FED300F693BF /* EnrollViewTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnrollViewTableView.swift; sourceTree = "<group>"; };
+		36FD627B1C52090A00F693BF /* EnrollTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnrollTableViewCell.swift; sourceTree = "<group>"; };
+		36FD627D1C5232C000F693BF /* EnrollViewWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnrollViewWebViewController.swift; sourceTree = "<group>"; };
 		3F73536C0526B2359DC32DEC /* Pods-DemoSwiftJwcaiCoreWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSwiftJwcaiCoreWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoSwiftJwcaiCoreWork/Pods-DemoSwiftJwcaiCoreWork.debug.xcconfig"; sourceTree = "<group>"; };
 		7828B74F1C4C6DA60095129D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7828B7511C4C6DBE0095129D /* PageNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageNavViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +90,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		364DC4EC1C51F6E9000EA106 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				7879E6E81C4D1CC10038852F /* AFhttpRequestMothed.swift */,
+				7879E6EA1C4D223B0038852F /* HttpUrl.swift */,
+				364DC4ED1C51F754000EA106 /* HttpEnrollRequestData.swift */,
+			);
+			name = Http;
+			sourceTree = "<group>";
+		};
 		36DF03271C50CFE100538D2D /* extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,16 +108,23 @@
 			name = extension;
 			sourceTree = "<group>";
 		};
+		36FD627A1C5208E500F693BF /* EnrollCell */ = {
+			isa = PBXGroup;
+			children = (
+				36FD627B1C52090A00F693BF /* EnrollTableViewCell.swift */,
+			);
+			name = EnrollCell;
+			sourceTree = "<group>";
+		};
 		7828B74B1C4C6D0A0095129D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				364DC4EC1C51F6E9000EA106 /* Http */,
 				36DF03271C50CFE100538D2D /* extension */,
 				78BB4ABC1C4B503F002DEDD0 /* AppDelegate.swift */,
 				36500FAD1C4C905E0008ACA5 /* Machine.swift */,
 				36FBF74C1C4CCB4B00862309 /* UIViewController+RACObserve.h */,
 				36FBF74D1C4CCB4B00862309 /* UIViewController+RACObserve.m */,
-				7879E6E81C4D1CC10038852F /* AFhttpRequestMothed.swift */,
-				7879E6EA1C4D223B0038852F /* HttpUrl.swift */,
 				360E1A541C4FAF010015BDB3 /* GetFileJson.swift */,
 				36249F2D1C50778400CF32D8 /* Tool.swift */,
 				36249F2F1C508C3000CF32D8 /* JsonKey.swift */,
@@ -110,6 +135,7 @@
 		7828B74C1C4C6D190095129D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				36FD627A1C5208E500F693BF /* EnrollCell */,
 				36FBF7591C4CF37F00862309 /* DCWebImageManager.h */,
 				36FBF75A1C4CF37F00862309 /* DCWebImageManager.m */,
 				36FBF7561C4CF17900862309 /* DCPicScrollView.h */,
@@ -119,6 +145,7 @@
 				36FBF7521C4CECAA00862309 /* BaseView.swift */,
 				36FBF7541C4CEECE00862309 /* HomeView.swift */,
 				7830E7A81C4FCA8400B47353 /* HomeDrawTouchView.swift */,
+				36FD62781C51FED300F693BF /* EnrollViewTableView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -131,6 +158,7 @@
 				7828B7511C4C6DBE0095129D /* PageNavViewController.swift */,
 				36500FAF1C4C99170008ACA5 /* HomeViewController.swift */,
 				360E1A501C4F94290015BDB3 /* BaseWebViewController.swift */,
+				36FD627D1C5232C000F693BF /* EnrollViewWebViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -316,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36FD62791C51FED300F693BF /* EnrollViewTableView.swift in Sources */,
 				360E1A511C4F94290015BDB3 /* BaseWebViewController.swift in Sources */,
 				7828B7501C4C6DA60095129D /* BaseViewController.swift in Sources */,
 				7879E6E91C4D1CC10038852F /* AFhttpRequestMothed.swift in Sources */,
@@ -330,12 +359,15 @@
 				78BB4AC51C4B503F002DEDD0 /* DemoSwiftJwcaiCoreWork.xcdatamodeld in Sources */,
 				36DF03291C50D00100538D2D /* StringExtension.swift in Sources */,
 				36FBF74E1C4CCB4B00862309 /* UIViewController+RACObserve.m in Sources */,
+				364DC4EE1C51F754000EA106 /* HttpEnrollRequestData.swift in Sources */,
+				36FD627E1C5232C000F693BF /* EnrollViewWebViewController.swift in Sources */,
 				36FBF7581C4CF17900862309 /* DCPicScrollView.m in Sources */,
 				78BB4ABD1C4B503F002DEDD0 /* AppDelegate.swift in Sources */,
 				36FBF7531C4CECAA00862309 /* BaseView.swift in Sources */,
 				36249F2E1C50778400CF32D8 /* Tool.swift in Sources */,
 				36500FB01C4C99170008ACA5 /* HomeViewController.swift in Sources */,
 				7828B7521C4C6DBE0095129D /* PageNavViewController.swift in Sources */,
+				36FD627C1C52090A00F693BF /* EnrollTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

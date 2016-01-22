@@ -37,7 +37,7 @@ class HomeViewController: BaseViewController {
         return buttonRight
     }()
 
-
+// 第一个主页面
     lazy var home:HomeView = {
 
         var homeV = HomeView(frame:CGRect(x: 0, y: 64, width: Mobile.width, height: Mobile.height - 64 - 50))
@@ -67,6 +67,30 @@ class HomeViewController: BaseViewController {
 
 
     }()
+    
+//    第二个主界面
+    
+    lazy var enrollView:EnrollViewTableView = {
+    
+       
+        var enroll = EnrollViewTableView(frame:CGRect(x: 0, y: 64, width: Mobile.width, height: Mobile.height - 64 - 50 * Mobile.ratio))
+        
+          enroll.startRequest()
+        
+        enroll.backgroundColor = RGBA(255,1,1,1)
+        
+        return enroll
+    
+    
+    
+    }()
+    
+    
+    
+    
+    
+    
+    
     lazy var navXueCheImage:UIImageView = {
 
 
@@ -114,6 +138,8 @@ class HomeViewController: BaseViewController {
         
 //        view.backgroundColor = RGB(0, 0, 255)
         view.backgroundColor = ColorHex(hex: 0xff0000)
+        
+        view.addSubview(enrollView)
         
     }
     

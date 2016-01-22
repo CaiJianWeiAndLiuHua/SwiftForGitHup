@@ -43,6 +43,31 @@ class   HTTP {
     }
     
     
+    class func getWebHostURL() -> String {
+    
+    
+        switch debug {
+            
+        case .HoseOnline:
+            return "http://www.58xueche.com"
+            
+        case .Debug:
+            return "http://xueche.test.58v5.cn"
+            
+        default:
+            
+            return "onLine nothing"
+            
+        }
+
+    
+    
+    
+    
+    }
+    
+    
+    
     
     
 }
@@ -51,9 +76,9 @@ struct HttpChildURL {
 
     static let bandHomeURL = "\(HTTP.getHostURL())/ads/pic"
 
+    static let enrollURL = "\(HTTP.getHostURL())/classtype/list"
 
-
-
+    static let webURLEn =  "\(HTTP.getWebHostURL())/bm/classes_intro"
 
 
 
@@ -69,8 +94,8 @@ struct kfNameLet {
     static let appviewsion = "appversion"
     static let os = "os"
     static let productorid = "productorid"
-    
-    
+    static let description = "description"
+    static let classname  = "classname"
     
     static let imageurl = "imageurl"
     
@@ -82,9 +107,18 @@ struct kfNameLet {
     
     static let url = "url"
     
-    
+    static let phonedes = "phonedes"
     static let title = "title"
     
+    static let  price  = "price"
+    
+    static let channelid = "channelid"
+    
+    
+    static let classes  = "classes"
+    
+    
+    static let iconimg  = "iconimg"
 }
 
 
