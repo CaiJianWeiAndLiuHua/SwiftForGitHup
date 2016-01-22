@@ -41,42 +41,35 @@ class   HTTP {
         }
 
     }
-<<<<<<< HEAD
 
 
-
-
-=======
-    
-    
     class func getWebHostURL() -> String {
-    
-    
+
+
         switch debug {
-            
+
         case .HoseOnline:
             return "http://www.58xueche.com"
-            
+
         case .Debug:
             return "http://xueche.test.58v5.cn"
-            
+
         default:
-            
+
             return "onLine nothing"
-            
+
         }
 
-    
-    
-    
-    
+
+
+
+
     }
-    
-    
-    
-    
-    
->>>>>>> origin/master
+
+
+
+
+
 }
 
 struct HttpChildURL {
@@ -101,15 +94,9 @@ struct kfNameLet {
     static let appviewsion = "appversion"
     static let os = "os"
     static let productorid = "productorid"
-<<<<<<< HEAD
-
-
-
-=======
     static let description = "description"
     static let classname  = "classname"
-    
->>>>>>> origin/master
+
     static let imageurl = "imageurl"
 
     static let result  = "result"
@@ -119,26 +106,19 @@ struct kfNameLet {
     static let action = "action"
 
     static let url = "url"
-<<<<<<< HEAD
 
-
-    static let title = "title"
-
-=======
-    
     static let phonedes = "phonedes"
     static let title = "title"
-    
+
     static let  price  = "price"
-    
+
     static let channelid = "channelid"
-    
-    
+
+
     static let classes  = "classes"
-    
-    
+
+
     static let iconimg  = "iconimg"
->>>>>>> origin/master
 }
 
 
@@ -149,7 +129,7 @@ struct ACTION {
     static let  extparam = "extparam"
 
     static let   pagetype  = "pagetype"
-
+    
     static let   rightbaritemtype = "rightbaritemtype"
     
     static let    title = "title"
@@ -158,10 +138,3 @@ struct ACTION {
     
     
 }
-
-
-
-
-
-
-

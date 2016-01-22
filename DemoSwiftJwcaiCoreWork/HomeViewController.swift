@@ -166,6 +166,8 @@ class HomeViewController: BaseViewController {
         
         view.addSubview(enrollView)
         
+        view.addSubview(enrollView)
+        
     }
     
 }

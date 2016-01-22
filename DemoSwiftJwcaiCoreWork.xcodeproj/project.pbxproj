@@ -21,14 +21,18 @@
 		36FBF7551C4CEECE00862309 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF7541C4CEECE00862309 /* HomeView.swift */; };
 		36FBF7581C4CF17900862309 /* DCPicScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF7571C4CF17900862309 /* DCPicScrollView.m */; };
 		36FBF75B1C4CF37F00862309 /* DCWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF75A1C4CF37F00862309 /* DCWebImageManager.m */; };
-<<<<<<< HEAD
+
 		78273D7E1C51199700E18B13 /* BottomViewTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78273D7D1C51199700E18B13 /* BottomViewTouch.swift */; };
 		78273D801C511DE700E18B13 /* BottomItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78273D7F1C511DE700E18B13 /* BottomItemView.swift */; };
-=======
+
 		36FD62791C51FED300F693BF /* EnrollViewTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD62781C51FED300F693BF /* EnrollViewTableView.swift */; };
 		36FD627C1C52090A00F693BF /* EnrollTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD627B1C52090A00F693BF /* EnrollTableViewCell.swift */; };
 		36FD627E1C5232C000F693BF /* EnrollViewWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD627D1C5232C000F693BF /* EnrollViewWebViewController.swift */; };
->>>>>>> origin/master
+
+		36FD62791C51FED300F693BF /* EnrollViewTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD62781C51FED300F693BF /* EnrollViewTableView.swift */; };
+		36FD627C1C52090A00F693BF /* EnrollTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD627B1C52090A00F693BF /* EnrollTableViewCell.swift */; };
+		36FD627E1C5232C000F693BF /* EnrollViewWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD627D1C5232C000F693BF /* EnrollViewWebViewController.swift */; };
+
 		7828B7501C4C6DA60095129D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828B74F1C4C6DA60095129D /* BaseViewController.swift */; };
 		7828B7521C4C6DBE0095129D /* PageNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828B7511C4C6DBE0095129D /* PageNavViewController.swift */; };
 		7830E7A91C4FCA8400B47353 /* HomeDrawTouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7830E7A81C4FCA8400B47353 /* HomeDrawTouchView.swift */; };
@@ -152,12 +156,13 @@
 				36FBF7521C4CECAA00862309 /* BaseView.swift */,
 				36FBF7541C4CEECE00862309 /* HomeView.swift */,
 				7830E7A81C4FCA8400B47353 /* HomeDrawTouchView.swift */,
-<<<<<<< HEAD
 				78273D7D1C51199700E18B13 /* BottomViewTouch.swift */,
 				78273D7F1C511DE700E18B13 /* BottomItemView.swift */,
-=======
+
 				36FD62781C51FED300F693BF /* EnrollViewTableView.swift */,
->>>>>>> origin/master
+
+				36FD62781C51FED300F693BF /* EnrollViewTableView.swift */,
+
 			);
 			name = View;
 			sourceTree = "<group>";
