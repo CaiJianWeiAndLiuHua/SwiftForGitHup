@@ -44,7 +44,7 @@ class HomeDrawTouchView: UIView {
     lazy var lableCalculate:UILabel = {
         
         var lable = UILabel(frame: self.frame)
-        
+         
         
         return lable
     }();

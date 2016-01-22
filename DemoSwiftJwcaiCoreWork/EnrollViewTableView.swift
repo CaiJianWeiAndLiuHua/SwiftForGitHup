@@ -11,7 +11,7 @@ import UIKit
 
 class EnrollViewTableView: UIView , UITableViewDataSource , UITableViewDelegate{
     
-    var enrollDidSelectRow:(NSDictionary)!
+    var enrollDidSelectRow:((NSDictionary) -> Void)!
     
     
     
@@ -77,9 +77,11 @@ class EnrollViewTableView: UIView , UITableViewDataSource , UITableViewDelegate{
     
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+
+         let dicVale =   self.dataSourceArray![indexPath.row] as? NSDictionary
+
         
-        
-        print("xxxxx...... \(indexPath.row)")
+        print("xxxxx...... \(indexPath.row) :: \(dicVale)")
         
         
     }

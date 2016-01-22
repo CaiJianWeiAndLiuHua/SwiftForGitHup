@@ -28,3 +28,11 @@ struct KEY_NAME {
     
     
 }
+
+struct BottomKey {
+    static let bottomHeartImage = "heartImage"
+
+    static let bottomHeartTitle = "bottomHeartTitle"
+}
+
+

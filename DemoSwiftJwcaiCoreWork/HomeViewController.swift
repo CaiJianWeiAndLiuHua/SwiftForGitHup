@@ -12,12 +12,62 @@ class HomeViewController: BaseViewController {
 
 
 
-    var dicJson:NSDictionary?
+    var dicJson:NSDictionary! {
 
+        didSet {
+
+            if  ("link" as NSString).isEqualToString(dicJson[ACTION.pagetype] as! String ){
+
+                self.performSegueWithIdentifier("mainWebViewController", sender: nil);
+                //                print("aciton index \(index)")
+            }
+
+
+
+        }
+
+
+    }
+//主界面切换
     lazy var bottomView:BottomViewTouch = {
 
         var bottom = BottomViewTouch.initWithFrameView(CGRect(x: 0, y: Mobile.height - 50 * Mobile.ratio , width: Mobile.width, height: 50 * Mobile.ratio))
+        bottom.bottomTagIndex = {
 
+
+
+           (indexTouch)  in
+
+            self.home.removeFromSuperview()
+            self.enrollView.removeFromSuperview()
+
+            switch indexTouch {
+
+            case  100 :
+
+                self.view.addSubview(self.home)
+
+                break
+
+            case  200 :
+                 self.view.addSubview(self.enrollView)
+                break
+
+            case  300:
+
+                break
+
+            default:
+
+                break
+
+            }
+
+
+
+
+
+        }
 
         return bottom
     }()
@@ -25,7 +75,7 @@ class HomeViewController: BaseViewController {
 
 
     
-    lazy var rightButton:UIButton = {
+    lazy var leftButton:UIButton = {
 
         let buttonRight = UIButton(frame: CGRect(x: 20, y: 20, width: 44, height: 30))
 
@@ -39,12 +89,12 @@ class HomeViewController: BaseViewController {
 
 
         })
-        buttonRight.setTitle("Left", forState: .Normal)
+        buttonRight.setTitle("left", forState: .Normal)
         return buttonRight
     }()
 
 
-    lazy var leftButton:UIButton = {
+    lazy var rightButton:UIButton = {
 
         let buttonRight = UIButton(frame: CGRect(x: Mobile.width - 70, y: 20, width: 44, height: 30))
 
@@ -56,7 +106,7 @@ class HomeViewController: BaseViewController {
 
 
         })
-        buttonRight.setTitle("Right", forState: .Normal)
+        buttonRight.setTitle("杭州", forState: .Normal)
         return buttonRight
     }()
 
@@ -72,11 +122,7 @@ class HomeViewController: BaseViewController {
             
             self.dicJson = dicJ
             
-            if  ("link" as NSString).isEqualToString(  dicJ[ACTION.pagetype] as! String ){
-            
-                self.performSegueWithIdentifier("mainWebViewController", sender: nil);
-                print("aciton index \(index)")
-            }
+
             
             
            
@@ -101,7 +147,14 @@ class HomeViewController: BaseViewController {
           enroll.startRequest()
         
         enroll.backgroundColor = RGBA(255,1,1,1)
-        
+        enroll.enrollDidSelectRow = {
+            (dicValue) in
+
+          self.dicJson = dicValue
+
+
+
+        }
         return enroll
     
     
@@ -141,32 +194,19 @@ class HomeViewController: BaseViewController {
     }
 
 
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-
-        self.view .endEditing(true)
-        
-    }
-
 
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        self.edgesForExtendedLayout = .None
-        
+//        self.edgesForExtendedLayout = .None
         navLable.removeFromSuperview()
         view.addSubview(navXueCheImage)
         view.addSubview(home)
         view.addSubview(rightButton)
         view.addSubview(leftButton)
-        
-//        view.backgroundColor = RGB(0, 0, 255)
-        view.backgroundColor = ColorHex(hex: 0xff0000)
 
         view.addSubview(bottomView)
-        
-        view.addSubview(enrollView)
-        
-        view.addSubview(enrollView)
+
         
     }
     
