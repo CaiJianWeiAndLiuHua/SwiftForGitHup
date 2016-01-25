@@ -80,6 +80,12 @@ class EnrollViewTableView: UIView , UITableViewDataSource , UITableViewDelegate{
 
          let dicVale =   self.dataSourceArray![indexPath.row] as? NSDictionary
 
+        if let _ = self.enrollDidSelectRow {
+        
+             self.enrollDidSelectRow(dicVale!)
+        
+        }
+        
         
         print("xxxxx...... \(indexPath.row) :: \(dicVale)")
         

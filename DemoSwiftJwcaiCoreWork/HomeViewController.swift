@@ -2,27 +2,38 @@
 import UIKit
 class HomeViewController: BaseViewController {
 
-    private let tagIndexOne  = 100
-
-    private let tagIndexTwo  = 200
-
-    private let tagIndexThree = 300
-
-
+//    private let tagIndexOne  = 100
+//
+//    private let tagIndexTwo  = 200
+//
+//    private let tagIndexThree = 300
 
 
+
+
+//    主页面条转
+    
 
     var dicJson:NSDictionary! {
 
         didSet {
-
+            
+            
+            if let _ = dicJson[ACTION.pagetype] {
+            
             if  ("link" as NSString).isEqualToString(dicJson[ACTION.pagetype] as! String ){
 
-                self.performSegueWithIdentifier("mainWebViewController", sender: nil);
+                self.performSegueWithIdentifier("mainWebViewController", sender: nil)
                 //                print("aciton index \(index)")
             }
 
-
+            }else{
+            
+                 self.performSegueWithIdentifier("push to enroll view controller", sender: nil)
+            
+            
+            
+            }
 
         }
 
@@ -161,7 +172,9 @@ class HomeViewController: BaseViewController {
     
     }()
     
+   
     
+  
     
     
     
@@ -187,6 +200,11 @@ class HomeViewController: BaseViewController {
         
             (segue.destinationViewController as! BaseWebViewController).urlDiction = self.dicJson
             
+        } else if (segue.destinationViewController.isKindOfClass(EnrollViewWebViewController.classForCoder())){
+        
+        
+              (segue.destinationViewController as! EnrollViewWebViewController).pararamer = self.dicJson
+        
         }
         
         

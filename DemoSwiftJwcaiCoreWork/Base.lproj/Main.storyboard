@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -78,11 +79,77 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <segue destination="WLR-Lw-Ipj" kind="push" identifier="mainWebViewController" id="hBP-ee-eCe"/>
+                        <segue destination="SaT-fo-0Af" kind="push" identifier="push to enroll view controller" id="DpB-gs-eje"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rRf-nK-2fR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="856" y="278"/>
+            <point key="canvasLocation" x="808" y="270"/>
+        </scene>
+        <!--Enroll View Web View Controller-->
+        <scene sceneID="5zY-4d-Fbu">
+            <objects>
+                <viewController id="SaT-fo-0Af" customClass="EnrollViewWebViewController" customModule="DemoSwiftJwcaiCoreWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YA4-7i-8rT"/>
+                        <viewControllerLayoutGuide type="bottom" id="69T-Mo-bg8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lWm-Oa-bKU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tvj-Ef-qLx">
+                                <rect key="frame" x="-4" y="44" width="328" height="480"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCy-lT-cUP">
+                                <rect key="frame" x="0.0" y="523" width="127" height="45"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="lZx-3a-pmF"/>
+                                    <constraint firstAttribute="width" constant="127" id="lkd-cp-Z0h"/>
+                                </constraints>
+                                <state key="normal" title="电话咨询"/>
+                                <connections>
+                                    <action selector="callPhone:" destination="SaT-fo-0Af" eventType="touchUpInside" id="xUV-OB-EtL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtT-1c-lLR">
+                                <rect key="frame" x="128" y="523" width="192" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.59741825199999998" blue="0.52653531760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="daO-ib-syn"/>
+                                </constraints>
+                                <state key="normal" title="立即报名">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="masterEnroll:" destination="SaT-fo-0Af" eventType="touchUpInside" id="aTR-hj-TMb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EtT-1c-lLR" firstAttribute="leading" secondItem="SCy-lT-cUP" secondAttribute="trailing" constant="1" id="7gp-em-ZZj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EtT-1c-lLR" secondAttribute="trailing" constant="-20" id="CyS-bt-i8T"/>
+                            <constraint firstItem="SCy-lT-cUP" firstAttribute="leading" secondItem="lWm-Oa-bKU" secondAttribute="leadingMargin" constant="-20" id="G1u-O6-VnP"/>
+                            <constraint firstItem="69T-Mo-bg8" firstAttribute="top" secondItem="SCy-lT-cUP" secondAttribute="bottom" id="HGT-eW-JKZ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Tvj-Ef-qLx" secondAttribute="bottom" constant="44" id="Kbh-wW-2XG"/>
+                            <constraint firstItem="69T-Mo-bg8" firstAttribute="top" secondItem="EtT-1c-lLR" secondAttribute="bottom" id="UMK-XF-039"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tvj-Ef-qLx" secondAttribute="trailing" constant="-20" id="gzj-V9-lFj"/>
+                            <constraint firstItem="Tvj-Ef-qLx" firstAttribute="leading" secondItem="lWm-Oa-bKU" secondAttribute="leadingMargin" constant="-20" id="lyL-7X-Ky1"/>
+                            <constraint firstItem="Tvj-Ef-qLx" firstAttribute="top" secondItem="YA4-7i-8rT" secondAttribute="bottom" constant="24" id="oUf-zk-ejC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PuD-Eu-u1j"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="enrollWebView" destination="Tvj-Ef-qLx" id="Jli-bw-jfO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A4L-Rb-VGB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="363"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4wE-rp-lpI">
@@ -120,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WES-hO-8o3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1669" y="312"/>
+            <point key="canvasLocation" x="1573" y="-608"/>
         </scene>
     </scenes>
     <resources>

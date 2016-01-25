@@ -119,6 +119,12 @@ struct kfNameLet {
 
 
     static let iconimg  = "iconimg"
+    
+    
+    static let  standard = "standard"
+    
+    static let  ID  = "id"
+    
 }
 
 
