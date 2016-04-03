@@ -21,18 +21,11 @@
 		36FBF7551C4CEECE00862309 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF7541C4CEECE00862309 /* HomeView.swift */; };
 		36FBF7581C4CF17900862309 /* DCPicScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF7571C4CF17900862309 /* DCPicScrollView.m */; };
 		36FBF75B1C4CF37F00862309 /* DCWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF75A1C4CF37F00862309 /* DCWebImageManager.m */; };
-
+		36FD62791C51FED300F693BF /* EnrollViewTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD62781C51FED300F693BF /* EnrollViewTableView.swift */; };
+		36FD627C1C52090A00F693BF /* EnrollTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD627B1C52090A00F693BF /* EnrollTableViewCell.swift */; };
+		36FD627E1C5232C000F693BF /* EnrollViewWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD627D1C5232C000F693BF /* EnrollViewWebViewController.swift */; };
 		78273D7E1C51199700E18B13 /* BottomViewTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78273D7D1C51199700E18B13 /* BottomViewTouch.swift */; };
 		78273D801C511DE700E18B13 /* BottomItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78273D7F1C511DE700E18B13 /* BottomItemView.swift */; };
-
-		36FD62791C51FED300F693BF /* EnrollViewTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD62781C51FED300F693BF /* EnrollViewTableView.swift */; };
-		36FD627C1C52090A00F693BF /* EnrollTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD627B1C52090A00F693BF /* EnrollTableViewCell.swift */; };
-		36FD627E1C5232C000F693BF /* EnrollViewWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD627D1C5232C000F693BF /* EnrollViewWebViewController.swift */; };
-
-		36FD62791C51FED300F693BF /* EnrollViewTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD62781C51FED300F693BF /* EnrollViewTableView.swift */; };
-		36FD627C1C52090A00F693BF /* EnrollTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD627B1C52090A00F693BF /* EnrollTableViewCell.swift */; };
-		36FD627E1C5232C000F693BF /* EnrollViewWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD627D1C5232C000F693BF /* EnrollViewWebViewController.swift */; };
-
 		7828B7501C4C6DA60095129D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828B74F1C4C6DA60095129D /* BaseViewController.swift */; };
 		7828B7521C4C6DBE0095129D /* PageNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828B7511C4C6DBE0095129D /* PageNavViewController.swift */; };
 		7830E7A91C4FCA8400B47353 /* HomeDrawTouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7830E7A81C4FCA8400B47353 /* HomeDrawTouchView.swift */; };
@@ -44,6 +37,8 @@
 		78BB4AC51C4B503F002DEDD0 /* DemoSwiftJwcaiCoreWork.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78BB4AC31C4B503F002DEDD0 /* DemoSwiftJwcaiCoreWork.xcdatamodeld */; };
 		78BB4AC71C4B503F002DEDD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78BB4AC61C4B503F002DEDD0 /* Assets.xcassets */; };
 		78BB4ACA1C4B503F002DEDD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BB4AC81C4B503F002DEDD0 /* LaunchScreen.storyboard */; };
+		78ED1FB01C6B73EF0080E9BC /* JwScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ED1FAF1C6B73EF0080E9BC /* JwScrollView.swift */; };
+		78ED1FB21C6B7BB80080E9BC /* PickImageViewCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ED1FB11C6B7BB80080E9BC /* PickImageViewCollectionCell.swift */; };
 		D708BFE76F0E6418ACA212E4 /* libPods-DemoSwiftJwcaiCoreWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78320D7E7EFFDFD792E58D76 /* libPods-DemoSwiftJwcaiCoreWork.a */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +81,8 @@
 		78BB4AC61C4B503F002DEDD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78BB4AC91C4B503F002DEDD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78BB4ACB1C4B503F002DEDD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78ED1FAF1C6B73EF0080E9BC /* JwScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JwScrollView.swift; sourceTree = "<group>"; };
+		78ED1FB11C6B7BB80080E9BC /* PickImageViewCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickImageViewCollectionCell.swift; sourceTree = "<group>"; };
 		95214E7D425605757EE4EE8A /* Pods-DemoSwiftJwcaiCoreWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSwiftJwcaiCoreWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoSwiftJwcaiCoreWork/Pods-DemoSwiftJwcaiCoreWork.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,11 +155,9 @@
 				7830E7A81C4FCA8400B47353 /* HomeDrawTouchView.swift */,
 				78273D7D1C51199700E18B13 /* BottomViewTouch.swift */,
 				78273D7F1C511DE700E18B13 /* BottomItemView.swift */,
-
 				36FD62781C51FED300F693BF /* EnrollViewTableView.swift */,
-
-				36FD62781C51FED300F693BF /* EnrollViewTableView.swift */,
-
+				78ED1FAF1C6B73EF0080E9BC /* JwScrollView.swift */,
+				78ED1FB11C6B7BB80080E9BC /* PickImageViewCollectionCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -365,6 +360,7 @@
 				360E1A511C4F94290015BDB3 /* BaseWebViewController.swift in Sources */,
 				7828B7501C4C6DA60095129D /* BaseViewController.swift in Sources */,
 				7879E6E91C4D1CC10038852F /* AFhttpRequestMothed.swift in Sources */,
+				78ED1FB01C6B73EF0080E9BC /* JwScrollView.swift in Sources */,
 				36FBF75B1C4CF37F00862309 /* DCWebImageManager.m in Sources */,
 				7879E6EB1C4D223B0038852F /* HttpUrl.swift in Sources */,
 				78BB4ABF1C4B503F002DEDD0 /* MainViewController.swift in Sources */,
@@ -385,6 +381,7 @@
 				36FBF7531C4CECAA00862309 /* BaseView.swift in Sources */,
 				36249F2E1C50778400CF32D8 /* Tool.swift in Sources */,
 				36500FB01C4C99170008ACA5 /* HomeViewController.swift in Sources */,
+				78ED1FB21C6B7BB80080E9BC /* PickImageViewCollectionCell.swift in Sources */,
 				7828B7521C4C6DBE0095129D /* PageNavViewController.swift in Sources */,
 				36FD627C1C52090A00F693BF /* EnrollTableViewCell.swift in Sources */,
 			);

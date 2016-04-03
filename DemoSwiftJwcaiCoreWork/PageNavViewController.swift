@@ -101,7 +101,7 @@ class PageNavViewController: UIViewController,UIScrollViewDelegate {
         buttonHome.setTitleColor(UIColor.redColor(), forState: .Normal)
         
         buttonHome.setTitle("进入主页", forState: .Normal)
-        
+
         return buttonHome
     
     

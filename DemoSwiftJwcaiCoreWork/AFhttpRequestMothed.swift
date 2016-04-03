@@ -42,12 +42,13 @@ class AFHttpRequestData {
 //        afManger.responseSerializer = AFHTTPResponseSerializer()
 
         afManger.GET(urlBase, parameters: parame, success: {
-            (operation,respone) in
+//            pick image data source 
+            operation,respone in
             suceessMothed(afManage: operation,respone: respone )
 
             }, failure: {
 
-                (operation,error) in
+                operation,error in
                 
                 errors(errorMessage: error)
         })

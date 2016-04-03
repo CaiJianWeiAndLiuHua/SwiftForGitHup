@@ -93,7 +93,7 @@ var didSelectAction:((NSDictionary) -> Void)!
     func creatMiddleView(){
     let dicJosn = GetFileJson.getHomeSourceCenterData()
     
-        let listData:NSArray = ((dicJosn[KEY_NAME.downIntro] as! NSDictionary)[KEY_NAME.content] as! NSArray)
+        let listData:NSArray = ((dicJosn![KEY_NAME.downIntro] as! NSDictionary)[KEY_NAME.content] as! NSArray)
         
         
         

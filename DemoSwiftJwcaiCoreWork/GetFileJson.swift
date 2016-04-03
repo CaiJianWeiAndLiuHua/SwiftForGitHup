@@ -11,14 +11,14 @@ import UIKit
 class GetFileJson: NSObject {
 
 //    提供主页上的数据
-    class func getHomeSourceCenterData() -> NSDictionary!{
+    class func getHomeSourceCenterData() -> NSDictionary?{
     
     
       let path = NSBundle.mainBundle().pathForResource("xc_home", ofType: "json")
         
         let data =    NSData(contentsOfFile: path!)
 
-        
+
         do{
         
         let dicJosn = try! NSJSONSerialization.JSONObjectWithData(data!, options: .MutableLeaves) as! NSDictionary
@@ -30,8 +30,8 @@ class GetFileJson: NSObject {
 
       }
     
-    
-    
+//         return nil
+
     
     
 }
