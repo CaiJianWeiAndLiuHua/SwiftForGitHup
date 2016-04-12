@@ -10,6 +10,9 @@
 		360E1A511C4F94290015BDB3 /* BaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E1A501C4F94290015BDB3 /* BaseWebViewController.swift */; };
 		360E1A531C4FAEBF0015BDB3 /* xc_home.json in Resources */ = {isa = PBXBuildFile; fileRef = 360E1A521C4FAEBF0015BDB3 /* xc_home.json */; };
 		360E1A551C4FAF010015BDB3 /* GetFileJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E1A541C4FAF010015BDB3 /* GetFileJson.swift */; };
+		361464D81C8959C10086F41F /* LHCLibarySwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361464D71C8959C10086F41F /* LHCLibarySwift.swift */; };
+		361464DC1C895A8F0086F41F /* LHCObserve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361464DB1C895A8F0086F41F /* LHCObserve.swift */; };
+		361464E21C8986CB0086F41F /* LHCAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361464E11C8986CB0086F41F /* LHCAlert.swift */; };
 		36249F2E1C50778400CF32D8 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36249F2D1C50778400CF32D8 /* Tool.swift */; };
 		36249F301C508C3000CF32D8 /* JsonKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36249F2F1C508C3000CF32D8 /* JsonKey.swift */; };
 		364DC4EE1C51F754000EA106 /* HttpEnrollRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364DC4ED1C51F754000EA106 /* HttpEnrollRequestData.swift */; };
@@ -46,6 +49,9 @@
 		360E1A501C4F94290015BDB3 /* BaseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebViewController.swift; sourceTree = "<group>"; };
 		360E1A521C4FAEBF0015BDB3 /* xc_home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = xc_home.json; sourceTree = "<group>"; };
 		360E1A541C4FAF010015BDB3 /* GetFileJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetFileJson.swift; sourceTree = "<group>"; };
+		361464D71C8959C10086F41F /* LHCLibarySwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LHCLibarySwift.swift; sourceTree = "<group>"; };
+		361464DB1C895A8F0086F41F /* LHCObserve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LHCObserve.swift; sourceTree = "<group>"; };
+		361464E11C8986CB0086F41F /* LHCAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LHCAlert.swift; sourceTree = "<group>"; };
 		36249F2D1C50778400CF32D8 /* Tool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 		36249F2F1C508C3000CF32D8 /* JsonKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonKey.swift; sourceTree = "<group>"; };
 		364DC4ED1C51F754000EA106 /* HttpEnrollRequestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpEnrollRequestData.swift; sourceTree = "<group>"; };
@@ -98,6 +104,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		361464D61C89598C0086F41F /* LibView */ = {
+			isa = PBXGroup;
+			children = (
+				361464D71C8959C10086F41F /* LHCLibarySwift.swift */,
+				361464DB1C895A8F0086F41F /* LHCObserve.swift */,
+				361464E11C8986CB0086F41F /* LHCAlert.swift */,
+			);
+			name = LibView;
+			sourceTree = "<group>";
+		};
 		364DC4EC1C51F6E9000EA106 /* Http */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +159,7 @@
 		7828B74C1C4C6D190095129D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				361464D61C89598C0086F41F /* LibView */,
 				36FD627A1C5208E500F693BF /* EnrollCell */,
 				36FBF7591C4CF37F00862309 /* DCWebImageManager.h */,
 				36FBF75A1C4CF37F00862309 /* DCWebImageManager.m */,
@@ -156,8 +173,11 @@
 				78273D7D1C51199700E18B13 /* BottomViewTouch.swift */,
 				78273D7F1C511DE700E18B13 /* BottomItemView.swift */,
 				36FD62781C51FED300F693BF /* EnrollViewTableView.swift */,
+<<<<<<< Updated upstream
 				78ED1FAF1C6B73EF0080E9BC /* JwScrollView.swift */,
 				78ED1FB11C6B7BB80080E9BC /* PickImageViewCollectionCell.swift */,
+=======
+>>>>>>> Stashed changes
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -369,6 +389,7 @@
 				36249F301C508C3000CF32D8 /* JsonKey.swift in Sources */,
 				360E1A551C4FAF010015BDB3 /* GetFileJson.swift in Sources */,
 				36500FAE1C4C905E0008ACA5 /* Machine.swift in Sources */,
+				361464D81C8959C10086F41F /* LHCLibarySwift.swift in Sources */,
 				7830E7A91C4FCA8400B47353 /* HomeDrawTouchView.swift in Sources */,
 				36FBF7551C4CEECE00862309 /* HomeView.swift in Sources */,
 				78BB4AC51C4B503F002DEDD0 /* DemoSwiftJwcaiCoreWork.xcdatamodeld in Sources */,
@@ -380,6 +401,8 @@
 				78BB4ABD1C4B503F002DEDD0 /* AppDelegate.swift in Sources */,
 				36FBF7531C4CECAA00862309 /* BaseView.swift in Sources */,
 				36249F2E1C50778400CF32D8 /* Tool.swift in Sources */,
+				361464E21C8986CB0086F41F /* LHCAlert.swift in Sources */,
+				361464DC1C895A8F0086F41F /* LHCObserve.swift in Sources */,
 				36500FB01C4C99170008ACA5 /* HomeViewController.swift in Sources */,
 				78ED1FB21C6B7BB80080E9BC /* PickImageViewCollectionCell.swift in Sources */,
 				7828B7521C4C6DBE0095129D /* PageNavViewController.swift in Sources */,

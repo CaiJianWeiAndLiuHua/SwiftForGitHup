@@ -1,5 +1,25 @@
 
 import UIKit
+
+
+class DemoChange {
+    
+    var commond:((AnyObject,DemoChange) -> (DemoChange))!
+    
+    
+    func initWithCommond(commond:(AnyObject,DemoChange)->DemoChange){
+    
+        self.commond = commond;
+    
+    }
+    
+}
+
+
+
+
+
+
 class HomeViewController: BaseViewController {
 
 //    private let tagIndexOne  = 100
@@ -18,7 +38,15 @@ class HomeViewController: BaseViewController {
 
         didSet {
             
+//            let demo:DemoChange =  DemoChange().initWithCommond { (_: (x, y) -> DemoChange )    in
+//                
+//                
+//                
+//                return y as DemoChange
+//            }
+//            
             
+//            print("\(demo)")
             if let _ = dicJson[ACTION.pagetype] {
             
             if  ("link" as NSString).isEqualToString(dicJson[ACTION.pagetype] as! String ){
